@@ -31,11 +31,10 @@ class App:
         self.root.geometry('%dx%d+%d+%d' % (width, height, x, y))
 
         self.root.title('Moving Mouse')
+        self.root.resizable(False, False)
         self.mainframe = ttk.Frame(self.root)
         self.mainframe.grid()
-        self.mainframe.columnconfigure(list(range(1, 7)), minsize=98)
-        s = ttk.Style()
-        s.configure('my.TButton', font=('Helvetica', 12))
+        self.mainframe.columnconfigure(list(range(1, 7)), minsize=(width/6)-2)
         ttk.Label(self.mainframe, text='Moving Mouse', font=("Brass Mono", 30))\
             .grid(row=0, column=2, columnspan=4, pady=12)
         ttk.Label(self.mainframe, text='Welcome to the Moving Mouse. \n '
