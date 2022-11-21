@@ -12,7 +12,6 @@ movements = ['random', 'back and forth', 'circular']
 init_question = 'Mouse movement'
 sleeping_question = 'Seconds between movements'
 speed = 0.4
-# sleeping = 15
 runs = 0
 status = ""
 
