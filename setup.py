@@ -9,7 +9,10 @@ from setuptools import setup
 
 APP = ['main.py']
 DATA_FILES = []
-OPTIONS = {'iconfile': 'mouse_icon.icns'}
+OPTIONS = {"includes": "pyautogui",
+           'argv_emulation': False,
+           'packages': ['pyautogui'],
+           'iconfile': 'mouse_icon.icns'}
 
 setup(
     app=APP,
